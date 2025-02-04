@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    margin: 0;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 100vh; /* Optional: Full viewport height */
+
+}
+
+.foyer{
+    background-image: url("./assets/backgroundstar.gif"); /* Replace with your GIF */
+    background-repeat: repeat; /* Tiles the GIF */
+    background-size: auto; /* Keeps the original GIF size */
+}
+
+.theRoom{
+    background-image: url("./assets/fondo_negro.gif"); /* Replace with your GIF */
+    background-repeat: repeat; /* Tiles the GIF */
+    background-size: auto; /* Keeps the original GIF size */
+}
+
+.backRoom{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.furniture{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align left;
+}
+
+
+#banner{
+    text-align: center;
+    text-decoration: underline overline #FF3028;
+    font-size: 5vw;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+#big{
+    padding: 5px;
+    background-color: red;
+}
+
+#small{
+    padding: 5px;
+    background-color: red;
+}
+
+h1, h2, h3, p, li, table, a{
+    display: block;
+    color: yellow;
+
+}
+
+
+
+.main{
+    display: flex;
+    flex-direction: column; /* Stacks elements */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Ensures inline text is centered */
+    max-width: 800px; /* Adjust width as needed */
+}
+
+
+#welcome {
+    max-width: 100%; /* Ensures image resizes properly */
+}
+
+#arrow{
+    position: absolute;
+    bottom: 20px; /* Moves it close to the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+}
+
+
+span{
+    color: red;
+}
+
+img {
+    max-width: 100%; /* Makes sure images scale properly */
+    display: block; /* Ensures they stack */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#smiley{
+    display: inline;
+    vertical-align: middle; /* Ensures proper alignment with text */
+}
+
+.gif-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+    color: yellow;
+}
+
+.gif-link:hover {
+    color: transparent; /* Hides the text */
+}
+
+.gif-link:hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: url('assets/img_fire.gif') no-repeat center center;
+    background-size: contain; /* Ensures the GIF fits within the link area */
+    transform: translate(-50%, -50%);
+}
+
