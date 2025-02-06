@@ -1,0 +1,16 @@
+/**{
+    outline: red dashed 1px;
+}
+*/
+
+.bg-foyer {
+    background-image: url("./assets/backgroundstar.gif");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.bg-room {
+    background-image: url("./assets/fondo_negro.gif");
+    background-repeat: repeat;
+    background-size: auto;
+}
